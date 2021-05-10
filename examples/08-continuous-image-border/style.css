@@ -1,0 +1,65 @@
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  color: coral;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* 使用border-image,必须指名border宽度样式 */
+.border-image {
+  border: 20px solid;
+  /* 九宫格，10是从图片上左、上右、下右和下左四角截取的正方形宽高 */
+  border-image: url('./bg.png') 20 repeat;
+}
+
+.dives {
+  padding: 20px;
+  background: url('./bg.png');
+  /** cover: 宽高均触边； contain: 宽or高触边*/
+  background-size: cover;
+}
+
+.dives div{
+  height: 100%;
+  width: 100%;
+  background: whitesmoke;
+}
+
+.suggest {
+  border: 20px solid transparent;
+  background: linear-gradient(white, white) padding-box, url('./bg.png') border-box 0 / cover;
+  /* background: linear-gradient(white, white), url('./bg.png');
+  background-size: cover;
+  background-clip: padding-box, border-box;
+  background-origin: border-box; */
+}
+
+.xin {
+  padding: 1em;
+  border: 1em solid transparent;
+  background: linear-gradient(white, white) padding-box,
+            repeating-linear-gradient(-45deg,
+              red 0, red 12.5%,
+              transparent 0, transparent 25%,
+              #58a 0, #58a 37.5%,
+              transparent 0, transparent 50%)
+             0 / .6em .6em;
+}
+
+.ants {
+  height: 150px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(white, white) padding-box,
+              repeating-linear-gradient( -45deg, black 0, black 25%, white 0, white 50%) 0 / 5px 5px;
+  animation: ant 12s infinite linear;
+}
+
+@keyframes ant { to { background-position: 100% } }

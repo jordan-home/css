@@ -1,0 +1,26 @@
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 200px;
+  height: 150px;
+  background: grey;
+}
+
+.background-position {
+  background: url('./cat.png') no-repeat bottom right greenyellow;
+  background-position: bottom 10px right 10px;
+}
+
+.background-origin {
+  width: 180px;
+  padding: 10px;
+  background: url('./cat.png') no-repeat bottom right greenyellow;
+  background-origin: content-box;
+}
+
+.calc {
+  background: url('./cat.png') no-repeat greenyellow;
+  background-position: calc(100% - 10px) calc(100% - 10px);
+}

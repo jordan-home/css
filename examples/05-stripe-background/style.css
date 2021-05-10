@@ -1,0 +1,31 @@
+.stripe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 10rem;
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+}
+.horizontal-stripe {
+  background: linear-gradient(#fba 50%, #2b1 0, #f88 70%);
+  background-size: 100% 5rem;
+}
+.vertical-stripe {
+  background: linear-gradient(to right, #fba 50%, #2b1 0, #f88 70%);
+  background-size: 15rem 100%;
+}
+
+.fortyfive-stripe {
+  /* background: repeating-linear-gradient(45deg, #fba, #fba 5rem, #2b1 0, #2b1 10rem); */
+  background: linear-gradient(to right, #f0f .5px, transparent 0),
+    linear-gradient(#f0f .5px, transparent 0),
+    linear-gradient(45deg, #fba 25%, #2b1 0, #2b1 50%,#fba 0, #fba 75%, #2b1 0);
+  background-size: 10rem 100%, 100% 10rem, 10rem 10rem;
+}
+
+.sixty-stripe {
+  background: repeating-linear-gradient(60deg, #fba, #fba 5rem, #2b1 0, #2b1 10rem);
+}
+
