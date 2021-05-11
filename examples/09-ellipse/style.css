@@ -1,0 +1,24 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    height: 120px;
+    width: 200px;
+    background: #5f9ea0;
+    font-size: 18px;
+    color: palevioletred;
+    outline: 10px solid skyblue;
+}
+
+.ellipse {
+    border-radius: 50%;
+}
+
+.ellipse-half {
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.ellipse-quarter {
+    border-radius: 100% 0 0 0 / 100% 0 0 0;
+}
