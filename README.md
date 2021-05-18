@@ -36,4 +36,28 @@ https://dabblet.com/gist/cd33da5d1a48046746cd
   border: 20px solid transparent;
   background: linear-gradient(white, white) padding-box, url('./bg.png') border-box 0 / cover;
 ```
+### 09-椭圆形
+```css
+  /** 1 2 3 4分别代表左上、右上、右下和左下；x表示borderRadius水平半径，y代表borderRadius竖直半径*/
+  border-radius: x1 x2 x3 x4 / y1 y2 y3 y4;
+```
+### 10-平行四边形
+方案1: transform: skewX(-30deg): 内容也会倾斜
+方案2: 容器skewX(n) + 子元素skewX(-n): 需要使用两个元素
+方案3: 伪元素方案
 
+### 11-菱形
+方案1: 仅仅适合正方形。 父元素rotate(45deg);子元素rotate(-45deg),放大1.42倍
+方案2: clip-path,通用
+
+### 12-切角
+方案1: 渐变 linear-gradient | radial-gradient
+方案2:裁切 clip-path
+方案3: border-image: SVG
+
+### 13-梯形标签页
+使用 伪元素 + 矩形3D旋转形成梯形
+
+### 14-简单的饼图
+方案1: 伪元素：animation + transform
+方案2: svg

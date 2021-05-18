@@ -1,0 +1,57 @@
+div {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    margin: 20px;
+    background: palegoldenrod;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, transparent 50%, purple 0);
+}
+
+@keyframes spin {
+    to { transform: rotate(.5turn); }
+}
+@keyframes bg {
+    50% { background: purple;}
+}
+
+.lt::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    content: '81%';
+    display: block;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    transform-origin: left;
+    background-color: inherit;
+    animation: spin 50s linear infinite,
+        bg 100s step-end infinite;
+    animation-delay: -81s;
+    animation-play-state: paused;
+}
+
+.circle-svg-1 {
+    fill: yellowgreen;
+    stroke: aqua;
+    stroke-width: 50;
+    /** stroke-dasharray: 圆周长*百分比 圆周长; */
+    stroke-dasharray: 50 371; 
+    stroke-dashoffset: 0;
+}
+
+.circle-svg-2 {
+    fill: transparent;
+    stroke: palevioletred;
+    stroke-width: 50;
+    stroke-dasharray: 90 371;
+    stroke-dashoffset: -50;
+}

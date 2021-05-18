@@ -1,0 +1,31 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: darkolivegreen;
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.perspective {
+    position: relative;
+    outline: 5px solid salmon;
+}
+
+.perspective::before {
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background: gainsboro;
+    position: absolute;
+    transform: perspective(10px) rotateX(1deg) scaleY(1.53);
+    transform-origin: bottom;
+}
