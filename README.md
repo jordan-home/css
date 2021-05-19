@@ -61,3 +61,10 @@ https://dabblet.com/gist/cd33da5d1a48046746cd
 ### 14-简单的饼图
 方案1: 伪元素：animation + transform
 方案2: svg
+
+### 15-单侧投影
+box-shadow 是元素本身大小加上模糊范围进行偏移形成的, 它看起来但实际上并非位于元素下层
+```css
+/* x y是偏移量,r1是模糊半径,r2是扩张半径可负值,c阴影颜色 */
+box-shadow: x y r1 r2 c;
+```

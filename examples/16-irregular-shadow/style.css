@@ -1,0 +1,15 @@
+.box {
+    margin: 30px;
+    display: flex;
+    background: transparent;
+    height: 10rem;
+    width: 20rem;
+    border: 1px solid salmon;
+    border-radius: 2rem;
+    filter: drop-shadow(0 0 5px skyblue);
+    color: skyblue;
+    font-size: 20px;
+    text-shadow: 20px 20px 2px blueviolet;
+    justify-content: center;
+    align-items: center;
+}
