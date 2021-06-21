@@ -1,0 +1,25 @@
+body {
+    background: gray;
+}
+
+.box {
+    margin: 30px;
+    height: 100px;
+    width: 200px;
+}
+
+.fake {
+    position: relative;
+    background: yellowgreen;
+}
+
+.fake::after {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    top: -20px;
+    right: -20px;
+    bottom: 0;
+    background: linear-gradient(30deg, greenyellow 14px, gray 0);
+}

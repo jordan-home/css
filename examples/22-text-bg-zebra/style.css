@@ -1,0 +1,6 @@
+.article {
+    line-height: 2;
+    background: whitesmoke;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.2) 50%, transparent 0);
+    background-size: auto 4em;
+}

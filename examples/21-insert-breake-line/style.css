@@ -1,0 +1,17 @@
+dd {
+    margin: 0;
+    font-weight: bold;
+}
+
+dt, dd {
+    white-space: pre;
+    display: inline;
+}
+
+dd + dt::before{
+    content: '\A'
+}
+
+dd + dd::before {
+    content: ',';
+}

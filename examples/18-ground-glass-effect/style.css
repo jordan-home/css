@@ -1,0 +1,48 @@
+body {
+    background: navajowhite;
+}
+.box {
+    border: 10px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    /* background-image: url(./trees.jpeg);
+    background-size: cover;
+    background-position: center; */
+    background: url(./trees.jpeg) 0 / cover fixed;
+    height: 700px;
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.article {
+    position: relative;
+    text-align: center;
+    width: 500px;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 80px auto;
+    z-index: 1;
+    background: hsla(0, 0%, 100%, .3);
+    overflow: hidden;
+}
+
+.article::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(./trees.jpeg) 0 / cover fixed;
+    z-index: -1;
+    filter: blur(20px);
+    margin: -20px;
+}
+
+.article h2 {
+    font-size: 30px;
+}
+
+.article p {
+    font-size: 18px;
+}

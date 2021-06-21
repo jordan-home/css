@@ -1,0 +1,34 @@
+div {
+    width: 400px;
+    padding: 10px;
+}
+p {
+    font-size: 40px;
+    line-height: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.normal {
+    text-decoration: underline;
+}
+
+.border {
+    border-bottom: 1px solid grey;
+}
+
+.shadow {
+    box-shadow: 0 -1px gray inset;
+}
+
+.bg {
+    background: linear-gradient(90deg, gray 66%, transparent 0) repeat-x;
+    background-size:  .2em 2px;
+    background-position: 0 .9em;
+    text-shadow: .09rem 0 white, -.09rem 0 white;
+}
+
+.future {
+    text-decoration: underline;
+    text-decoration-color: goldenrod;
+    text-decoration-style: wavy;
+    text-underline-position: below;
+}

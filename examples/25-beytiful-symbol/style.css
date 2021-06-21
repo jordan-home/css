@@ -1,0 +1,19 @@
+
+div {
+    padding: 20px;
+    font-size: 40px;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: CustomFont;
+    /* src: url(); */
+    src: local('Georgia'), local('Arial Narrow');
+    unicode-range: U+26;
+}
+
+.custom {
+    background: burlywood;
+    color: whitesmoke;
+    font-family: CustomFont, Times;
+}

@@ -1,0 +1,14 @@
+.box {
+    padding: 20px;
+    /* text-align: center; */
+    text-align: justify;
+    hyphens: auto;
+    margin: 20px auto;
+    background-color: gainsboro;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+body {
+    background: whitesmoke;
+}

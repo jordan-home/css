@@ -1,0 +1,45 @@
+p {
+    text-align: center;
+    width: 500px;
+    padding: 25px;
+    box-shadow: 2px 2px 4px 2px gray;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    font-size: 28px;
+    color: goldenrod;
+    line-height: 1.9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.relief-printing {
+    color: hsl(210, 13%, 40%);
+    background-color: darkgray;
+    text-shadow: 0 2px 2px hsla(0, 0%, 100%, 0.8);
+}
+
+.gravure-printing {
+    color: hsl(210, 13%, 40%);
+    background-color: darkgray;
+    text-shadow: 2px 0 2px hsla(0, 0%, 100%, 0.8);
+}
+
+.hollow-character {
+    color: white;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+.shine-character {
+    background-color: black;
+    color: snow;
+    text-shadow: 0 0 .1em, 0 0 .3em;
+}
+
+.css-3d {
+    background-color: #58a;
+    color: white;
+    text-shadow: 0 1px hsl(0, 0%, 85%), 0 2px hsl(0, 0%, 85%),
+    0 3px hsl(0, 0%, 80%), 0 4px hsl(0, 0%, 75%), 0 4px black;
+}
+
+
+

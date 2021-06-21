@@ -1,0 +1,21 @@
+.circle {
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    font-size: 2px;
+    overflow: visible;
+    transition: 2.5s;
+}
+
+.circle:hover {
+    font-size: 10px;
+}
+
+.circle path {
+    fill: none;
+}
+
+.circle svg {
+    margin: 20px;
+    overflow: visible;
+}

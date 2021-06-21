@@ -1,0 +1,21 @@
+p {
+    line-height: 2;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+.none {
+    font-variant-ligatures: none;
+}
+
+.common {
+    font-variant-ligatures: common-ligatures no-historical-ligatures no-discretionary-ligatures;
+}
+
+.historical {
+    font-variant-ligatures: no-common-ligatures historical-ligatures no-discretionary-ligatures;
+}
+
+.discretionary {
+    font-variant-ligatures: no-common-ligatures no-historical-ligatures discretionary-ligatures;
+}
